@@ -1,0 +1,31 @@
+// Kotlin OOP Concepts ----------------------------------
+
+Class - A class is a blueprint for the object
+Object - This is real object and it occupy space in Universe
+
+class ClassName {
+    // property
+    // member function
+    ... .. ...
+}
+
+see Example - Lamp.kt
+
+------------------------------------------------------------------------------------------------------------------------------------
+Constructors -
+In Kotlin, there are two constructors:
+
+    Primary constructor - concise way to initialize a class
+    Secondary constructor - allows you to put additional initialization logic
+
+Primary constructor-----------------------------------------------------------------
+
+class Person(_firstName: String, _age: Int) {
+    val firstName = _firstName.uppercase()
+    var age = _age
+
+    // initializer block
+    init {
+        ... .. ...
+    }
+}
